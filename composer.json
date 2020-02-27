@@ -1,0 +1,33 @@
+{
+    "name": "regnerisch/collection",
+    "type": "library",
+    "description": "Another collection class",
+    "license": "ISC",
+    "authors": [
+        {
+            "name": "Jonas Regner",
+            "email": "regnerjonas@protonmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Regnerisch\\Collection\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Regnerisch\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "regnerisch/php-cs-fixer-config": "^1.0",
+        "phpunit/phpunit": "^9.0"
+    }
+}
